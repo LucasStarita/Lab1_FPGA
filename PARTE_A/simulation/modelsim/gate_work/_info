@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_A\simulation\modelsim
+Eblock1
+Z1 w1729718248
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx10 cycloneiii 20 cycloneiii_atom_pack 0 22 n^46VOjinLK5_01fgQc6Z0
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx10 cycloneiii 21 cycloneiii_components 0 22 VeH8af>S`B?U[[D6_Khe@0
+Z8 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_A\simulation\modelsim
+Z9 8PARTE_A_7_1200mv_85c_slow.vho
+Z10 FPARTE_A_7_1200mv_85c_slow.vho
+l0
+L34
+VhSdfGk@cm6k8]>Bfbi[VY1
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1729718323.097000
+Z13 !s90 -reportprogress|300|-93|-work|work|PARTE_A_7_1200mv_85c_slow.vho|
+Z14 !s107 PARTE_A_7_1200mv_85c_slow.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 4Tiz0EJ2I`5TOk]=QLVFV2
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 6 block1 0 22 hSdfGk@cm6k8]>Bfbi[VY1
+l70
+L50
+V:]0nBQ[Q6T9A]7E@Az4ma0
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 CSl4KOJ4?WY4LnKQF0=cn3
+!i10b 1
+Eparte_a_testbench
+Z17 w1729717363
+R5
+R6
+R8
+Z18 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd
+Z19 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd
+l0
+L4
+Vo6KCSmQ_6o2>WPefd6QV[3
+!s100 W7dJIWaLPT]l=I6_PzKNz3
+R11
+31
+!i10b 1
+Z20 !s108 1729718323.307000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd|
+Z22 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd|
+R15
+R16
+Abehavior
+R5
+R6
+DEx4 work 17 parte_a_testbench 0 22 o6KCSmQ_6o2>WPefd6QV[3
+l26
+L6
+VUk2ImTCAR1YQgIRC09SLl3
+!s100 kZ_[S<HD6cKUU5`[CS[3P2
+R11
+31
+!i10b 1
+R20
+R21
+R22
+R15
+R16

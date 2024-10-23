@@ -1,6 +1,6 @@
 EDA Netlist Writer report for PARTE_A
-Tue Oct 22 10:15:45 2024
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Wed Oct 23 18:17:29 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -17,77 +17,90 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 22 10:15:45 2024 ;
+; EDA Netlist Writer Status ; Successful - Wed Oct 23 18:17:29 2024 ;
 ; Revision Name             ; PARTE_A                               ;
-; Top-level Entity Name     ; PARTE_A                               ;
-; Family                    ; Cyclone IV E                          ;
+; Top-level Entity Name     ; Block1                                ;
+; Family                    ; Cyclone III                           ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                             ;
-+---------------------------------------------------------------------------------------------------+-----------------------------+
-; Option                                                                                            ; Setting                     ;
-+---------------------------------------------------------------------------------------------------+-----------------------------+
-; Tool Name                                                                                         ; Questa Intel FPGA (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                          ;
-; Truncate long hierarchy paths                                                                     ; Off                         ;
-; Map illegal HDL characters                                                                        ; Off                         ;
-; Flatten buses into individual nodes                                                               ; Off                         ;
-; Maintain hierarchy                                                                                ; Off                         ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                         ;
-; Enable glitch filtering                                                                           ; Off                         ;
-; Do not write top level VHDL entity                                                                ; Off                         ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                         ;
-; Architecture name in VHDL output netlist                                                          ; structure                   ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                         ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                         ;
-+---------------------------------------------------------------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate netlist for functional simulation only                                                   ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Simulation Generated Files                                              ;
-+-------------------------------------------------------------------------+
-; Generated Files                                                         ;
-+-------------------------------------------------------------------------+
-; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/questa/PARTE_A.vo ;
-+-------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                        ;
++---------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                   ;
++---------------------------------------------------------------------------------------------------+
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_7_1200mv_85c_slow.vho      ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_7_1200mv_0c_slow.vho       ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_min_1200mv_0c_fast.vho     ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A.vho                        ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_7_1200mv_85c_vhd_slow.sdo  ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_7_1200mv_0c_vhd_slow.sdo   ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_min_1200mv_0c_vhd_fast.sdo ;
+; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/PARTE_A_vhd.sdo                    ;
++---------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Tue Oct 22 10:15:44 2024
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 23 18:17:28 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off PARTE_A -c PARTE_A
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file PARTE_A.vo in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/questa/" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Tue Oct 22 10:15:45 2024
+Info (204019): Generated file PARTE_A_7_1200mv_85c_slow.vho in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_7_1200mv_0c_slow.vho in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_min_1200mv_0c_fast.vho in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A.vho in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_7_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_7_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PARTE_A_vhd.sdo in folder "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4530 megabytes
+    Info: Processing ended: Wed Oct 23 18:17:29 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
