@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do PARTE_D_run_msim_rtl_vhdl.do 
+# do PARTE_D_TEMPLATE_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,35 +10,33 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D.vhd}
+# vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D_TEMPLATE.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity PARTE_D
-# -- Compiling architecture BEHAVIOR of PARTE_D
+# -- Compiling entity PARTE_D_TEMPLATE
+# -- Compiling architecture rtl of PARTE_D_TEMPLATE
 # 
-# vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D.vhd}
+# vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D_TEMPLATE.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_PARTE_D
-# -- Compiling architecture behavior of tb_PARTE_D
+# -- Compiling entity tb_PARTE_D_TEMPLATE
+# -- Compiling architecture behavior of tb_PARTE_D_TEMPLATE
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  tb_PARTE_D
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_PARTE_D 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  tb_PARTE_D_TEMPLATE
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_PARTE_D_TEMPLATE 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_parte_d(behavior)
-# Loading work.parte_d(behavior)
+# Loading work.tb_parte_d_template(behavior)
+# Loading work.parte_d_template(rtl)
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run -all
-# Break key hit 
-# Simulation stop requested.
+# run 2000 ns

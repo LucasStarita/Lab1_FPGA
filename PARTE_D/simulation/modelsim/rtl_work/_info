@@ -3,32 +3,32 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_D\simulation\modelsim
-Eparte_d
-Z1 w1729734249
+Eparte_d_template
+Z1 w1729785175
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_D\simulation\modelsim
-Z5 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D.vhd
-Z6 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D.vhd
+Z5 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D_TEMPLATE.vhd
+Z6 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D_TEMPLATE.vhd
 l0
-L21
-Ve;i>:Z@^E2=[ET98j?:0[2
+L4
+V4flRVj^<@REISzTBZij3S0
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1729734981.624000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D.vhd|
-Z10 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D.vhd|
+Z8 !s108 1729785838.468000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D_TEMPLATE.vhd|
+Z10 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/PARTE_D_TEMPLATE.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
-!s100 jMk>7d`VG=ef>_5HNhJJP1
+!s100 L<10zZ^`K;lT=k[TTK[XP3
 !i10b 1
-Abehavior
+Artl
 R2
 R3
-DEx4 work 7 parte_d 0 22 e;i>:Z@^E2=[ET98j?:0[2
-l37
-L33
-VW=cCkL3hgh[AlADIAG_Nn3
+DEx4 work 16 parte_d_template 0 22 4flRVj^<@REISzTBZij3S0
+l19
+L16
+VAo=K>na0dbTY[z7nd7Ah]3
 R7
 31
 R8
@@ -36,35 +36,35 @@ R9
 R10
 R11
 R12
-!s100 JY^cbid1A;^NeY4`9DAGL2
+!s100 iXJcX<;4<0:Be;<g<kIRe3
 !i10b 1
-Etb_parte_d
-Z13 w1729734854
+Etb_parte_d_template
+Z13 w1729785451
 R2
 R3
 R4
-Z14 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D.vhd
-Z15 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D.vhd
+Z14 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D_TEMPLATE.vhd
+Z15 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D_TEMPLATE.vhd
 l0
 L4
-VW_g1f?DFN644dHD6CizlT1
-!s100 IBALk5Mezb>`M^eQ2Rm1=2
+V1_Nm>1Hze1IMRdIO?f`UA2
+!s100 UG393V4SFUO<>o;KVkfBo3
 R7
 31
 !i10b 1
-Z16 !s108 1729734981.776000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D.vhd|
-Z18 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D.vhd|
+Z16 !s108 1729785838.617000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D_TEMPLATE.vhd|
+Z18 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_D/tb_PARTE_D_TEMPLATE.vhd|
 R11
 R12
 Abehavior
 R2
 R3
-DEx4 work 10 tb_parte_d 0 22 W_g1f?DFN644dHD6CizlT1
-l30
+DEx4 work 19 tb_parte_d_template 0 22 1_Nm>1Hze1IMRdIO?f`UA2
+l31
 L7
-V^jIT@nFbM<dL8bCz?_WkG2
-!s100 ZzYjM8]YFP]8ndYF6L;ZJ1
+VzJ:8LmU7h2Nd^j?k3n0:z0
+!s100 e_>dK]3bBT@J[^]X4Fd?>2
 R7
 31
 !i10b 1
