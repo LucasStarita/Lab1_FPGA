@@ -1,0 +1,23 @@
+|PARTE_D
+reset => reg_fstate.A.OUTPUTSELECT
+reset => reg_fstate.B.OUTPUTSELECT
+reset => reg_fstate.C.OUTPUTSELECT
+reset => reg_fstate.D.OUTPUTSELECT
+reset => reg_fstate.E.OUTPUTSELECT
+reset => reg_fstate.F.OUTPUTSELECT
+reset => reg_fstate.G.OUTPUTSELECT
+reset => LED1.OUTPUTSELECT
+reset => LED2.OUTPUTSELECT
+reset => LED3.OUTPUTSELECT
+reset => LED4.OUTPUTSELECT
+clock => fstate~1.DATAIN
+X => reg_fstate.DATAB
+X => reg_fstate.DATAB
+X => reg_fstate.DATAB
+X => reg_fstate.DATAB
+LED1 <= LED1.DB_MAX_OUTPUT_PORT_TYPE
+LED2 <= LED2.DB_MAX_OUTPUT_PORT_TYPE
+LED3 <= LED3.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= LED4.DB_MAX_OUTPUT_PORT_TYPE
+
+
