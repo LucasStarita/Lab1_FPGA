@@ -17,7 +17,7 @@ signal SW2n: STD_LOGIC;
 begin
 
 SW2n <= not SW2;
-LED <= (SW1 xor SW2n) or (SW2n and SW3);
+LED <= (SW1 xnor SW2n) or (SW2n and SW3);
 
 
 end Behavioral;

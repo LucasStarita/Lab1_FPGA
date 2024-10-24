@@ -1,26 +1,22 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do PARTE_A_run_msim_gate_vhdl.do 
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do PARTE_A_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {PARTE_A_7_1200mv_85c_slow.vho}
+# vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cycloneiii_atom_pack
-# -- Loading package cycloneiii_components
-# -- Compiling entity Block1
-# -- Compiling architecture structure of Block1
+# -- Compiling entity PARTE_A
+# -- Compiling architecture Behavioral of PARTE_A
 # 
 # vcom -93 -work work {C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -38,24 +34,18 @@
 # ** Warning: [4] C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
-# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /uut=PARTE_A_7_1200mv_85c_vhd_slow.sdo -L altera -L cycloneiii -L gate_work -L work -voptargs="+acc"  PARTE_A_TESTBENCH
-# vsim +transport_int_delays +transport_path_delays -L altera -L cycloneiii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /uut=PARTE_A_7_1200mv_85c_vhd_slow.sdo -t 1ps PARTE_A_TESTBENCH 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  PARTE_A_TESTBENCH
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps PARTE_A_TESTBENCH 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.parte_a_testbench(behavior)
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# Loading work.parte_a(behavioral)
 # 
-# ** Warning: (vsim-3473) Component instance "uut : PARTE_A" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /parte_a_testbench File: C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd
-# Loading instances from PARTE_A_7_1200mv_85c_vhd_slow.sdo
-# ** Error: (vsim-SDF-3250) PARTE_A_7_1200mv_85c_vhd_slow.sdo(0): Failed to find INSTANCE '/uut'.
-# 
-# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
-# 
-# ** Error: (vsim-SDF-3250) PARTE_A_7_1200mv_85c_vhd_slow.sdo(0): Failed to find INSTANCE '/uut'.
-# 
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./PARTE_A_run_msim_gate_vhdl.do PAUSED at line 12
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# WARNING: No extended dataflow license exists

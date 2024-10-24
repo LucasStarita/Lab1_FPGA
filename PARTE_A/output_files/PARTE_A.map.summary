@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Wed Oct 23 18:17:08 2024
+Analysis & Synthesis Status : Successful - Thu Oct 24 16:52:47 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : PARTE_A
-Top-level Entity Name : Block1
+Top-level Entity Name : PARTE_A
 Family : Cyclone III
 Total logic elements : 1
     Total combinational functions : 1

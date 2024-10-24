@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "10/23/2024 18:17:28"
+-- DATE "10/24/2024 16:53:21"
 
 -- 
 -- Device: Altera EP3C120F780C7 Package FBGA780
@@ -31,23 +31,23 @@ LIBRARY IEEE;
 USE CYCLONEIII.CYCLONEIII_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	Block1 IS
+ENTITY 	PARTE_A IS
     PORT (
-	LED : OUT std_logic;
+	SW1 : IN std_logic;
 	SW2 : IN std_logic;
 	SW3 : IN std_logic;
-	SW1 : IN std_logic
+	LED : OUT std_logic
 	);
-END Block1;
+END PARTE_A;
 
 -- Design Ports Information
 -- LED	=>  Location: PIN_AF19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- SW1	=>  Location: PIN_AC14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- SW3	=>  Location: PIN_AG23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- SW1	=>  Location: PIN_AC14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- SW2	=>  Location: PIN_AD18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF Block1 IS
+ARCHITECTURE structure OF PARTE_A IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -57,22 +57,22 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_LED : std_logic;
+SIGNAL ww_SW1 : std_logic;
 SIGNAL ww_SW2 : std_logic;
 SIGNAL ww_SW3 : std_logic;
-SIGNAL ww_SW1 : std_logic;
+SIGNAL ww_LED : std_logic;
 SIGNAL \LED~output_o\ : std_logic;
 SIGNAL \SW3~input_o\ : std_logic;
 SIGNAL \SW1~input_o\ : std_logic;
 SIGNAL \SW2~input_o\ : std_logic;
-SIGNAL \inst4~combout\ : std_logic;
+SIGNAL \LED~0_combout\ : std_logic;
 
 BEGIN
 
-LED <= ww_LED;
+ww_SW1 <= SW1;
 ww_SW2 <= SW2;
 ww_SW3 <= SW3;
-ww_SW1 <= SW1;
+LED <= ww_LED;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
@@ -85,7 +85,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst4~combout\,
+	i => \LED~0_combout\,
 	devoe => ww_devoe,
 	o => \LED~output_o\);
 
@@ -123,20 +123,20 @@ PORT MAP (
 	o => \SW2~input_o\);
 
 -- Location: LCCOMB_X82_Y1_N24
-inst4 : cycloneiii_lcell_comb
+\LED~0\ : cycloneiii_lcell_comb
 -- Equation(s):
--- \inst4~combout\ = (\SW1~input_o\ & ((\SW3~input_o\) # (\SW2~input_o\))) # (!\SW1~input_o\ & ((!\SW2~input_o\)))
+-- \LED~0_combout\ = (\SW1~input_o\ & ((!\SW2~input_o\))) # (!\SW1~input_o\ & ((\SW3~input_o\) # (\SW2~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000011001111",
+	lut_mask => "0000111111111100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \SW3~input_o\,
 	datac => \SW1~input_o\,
 	datad => \SW2~input_o\,
-	combout => \inst4~combout\);
+	combout => \LED~0_combout\);
 
 ww_LED <= \LED~output_o\;
 END structure;

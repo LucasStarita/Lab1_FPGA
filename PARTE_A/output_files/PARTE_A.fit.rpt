@@ -1,5 +1,5 @@
 Fitter report for PARTE_A
-Wed Oct 23 18:17:20 2024
+Thu Oct 24 16:53:07 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,10 +63,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Oct 23 18:17:20 2024           ;
+; Fitter Status                      ; Successful - Thu Oct 24 16:53:07 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PARTE_A                                         ;
-; Top-level Entity Name              ; Block1                                          ;
+; Top-level Entity Name              ; PARTE_A                                         ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C120F780C7                                   ;
 ; Timing Models                      ; Final                                           ;
@@ -1175,7 +1175,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |Block1                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 4    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Block1             ; work         ;
+; |PARTE_A                   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 4    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |PARTE_A            ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1186,8 +1186,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 ; LED  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SW1  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW3  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW1  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW2  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1197,12 +1197,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; SW1                 ;                   ;         ;
-;      - inst4        ; 0                 ; 6       ;
 ; SW3                 ;                   ;         ;
-;      - inst4        ; 1                 ; 6       ;
+;      - LED~0        ; 1                 ; 6       ;
+; SW1                 ;                   ;         ;
+;      - LED~0        ; 0                 ; 6       ;
 ; SW2                 ;                   ;         ;
-;      - inst4        ; 0                 ; 6       ;
+;      - LED~0        ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -1212,9 +1212,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name      ; Fan-Out             ;
 +-----------+---------------------+
 ; SW2~input ; 1                   ;
-; SW3~input ; 1                   ;
 ; SW1~input ; 1                   ;
-; inst4     ; 1                   ;
+; SW3~input ; 1                   ;
+; LED~0     ; 1                   ;
 +-----------+---------------------+
 
 
@@ -1351,8 +1351,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Inapplicable ; 0         ; 4            ; 0         ; 4            ; 4            ; 0         ; 0         ; 4            ; 0         ; 0         ; 4            ; 3            ; 4            ; 4            ; 1            ; 4            ; 3            ; 1            ; 4            ; 4            ; 4            ; 3            ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; LED                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW3                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW2                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1434,26 +1434,26 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X81_Y0 to location X91_Y11
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/output_files/PARTE_A.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5036 megabytes
-    Info: Processing ended: Wed Oct 23 18:17:20 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 5035 megabytes
+    Info: Processing ended: Thu Oct 24 16:53:07 2024
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+

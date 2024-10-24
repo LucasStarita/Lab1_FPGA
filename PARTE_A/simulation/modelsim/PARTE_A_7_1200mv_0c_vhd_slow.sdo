@@ -28,8 +28,8 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
-  (DESIGN "Block1")
-  (DATE "10/23/2024 18:17:29")
+  (DESIGN "PARTE_A")
+  (DATE "10/24/2024 16:53:21")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -75,14 +75,14 @@
   )
   (CELL
     (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE inst4)
+    (INSTANCE \\LED\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (2668:2668:2668) (2838:2838:2838))
         (PORT datac (3128:3128:3128) (3302:3302:3302))
         (PORT datad (2833:2833:2833) (2995:2995:2995))
-        (IOPATH datab combout (369:369:369) (349:349:349))
-        (IOPATH datac combout (263:263:263) (252:252:252))
+        (IOPATH datab combout (381:381:381) (378:378:378))
+        (IOPATH datac combout (265:265:265) (251:251:251))
         (IOPATH datad combout (144:144:144) (125:125:125))
       )
     )
