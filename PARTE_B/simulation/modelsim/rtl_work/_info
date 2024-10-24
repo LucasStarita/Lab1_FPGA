@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_B\simulation\modelsim
+Ed_ff
+Z1 w1729728193
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_B\simulation\modelsim
+Z7 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd
+Z8 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd
+l0
+L6
+V4=IKP?^Hh[c2hHNUA1G311
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1729730198.245000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd|
+Z12 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 dc^eczC4jT7C=<>_mH83<1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 4 d_ff 0 22 4=IKP?^Hh[c2hHNUA1G311
+l12
+L11
+V5KQ0CQC5cKR1Qn<gR_hZT3
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 IYV<VRK:9aQg79cX@KX251
+!i10b 1
+Erestadorcompleto
+Z15 w1729729856
+R4
+R5
+R6
+Z16 8C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd
+Z17 FC:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd
+l0
+L4
+V:O6lkgdmgnk44V3NZe_3G0
+!s100 YALi[INLob<QM3mim1T<o0
+R9
+31
+!i10b 1
+Z18 !s108 1729730198.402000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd|
+Z20 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd|
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 16 restadorcompleto 0 22 :O6lkgdmgnk44V3NZe_3G0
+l25
+L15
+VPB_AodegJ7H8MF8HZIKM21
+!s100 ^]a4VQQfCGn7_W3;749cf3
+R9
+31
+!i10b 1
+R18
+R19
+R20
+R13
+R14
