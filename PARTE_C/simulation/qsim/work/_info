@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_C\simulation\qsim
+vPARTE_C
+Z1 !s100 kQWI4[3ZFiQIRPWS5K30B2
+Z2 I3fAm`C@Vj7D@OEj>6@8^53
+Z3 VVZI7niNBD10?>?5^zGXhi3
+Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_C\simulation\qsim
+Z5 w1729815613
+Z6 8PARTE_C.vo
+Z7 FPARTE_C.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|PARTE_C.vo|
+Z10 o-work work -O0
+Z11 n@p@a@r@t@e_@c
+!i10b 1
+!s85 0
+Z12 !s108 1729815614.958000
+Z13 !s107 PARTE_C.vo|
+!s101 -O0
+vPARTE_C_vlg_check_tst
+!i10b 1
+Z14 !s100 Q^HPUbR:omoG^3M[9YW1O2
+Z15 I4]Ba4P;ae[E;3aD05N@f81
+Z16 VXaPV1<6Z]eAg;Z[Ad]YC_1
+R4
+R5
+Z17 8PARTE_C.vt
+Z18 FPARTE_C.vt
+L0 77
+R8
+r1
+!s85 0
+31
+Z19 !s108 1729815615.074000
+Z20 !s107 PARTE_C.vt|
+Z21 !s90 -work|work|PARTE_C.vt|
+!s101 -O0
+R10
+Z22 n@p@a@r@t@e_@c_vlg_check_tst
+vPARTE_C_vlg_sample_tst
+!i10b 1
+Z23 !s100 <EdUoUWOg9[:RLfTIhF[b0
+Z24 IcLVaaiPiH@2J6XW7>mie]0
+Z25 V0CS1=A_zV_75KP<9OVXAl2
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@p@a@r@t@e_@c_vlg_sample_tst
+vPARTE_C_vlg_vec_tst
+!i10b 1
+!s100 CI<WL5MYcR5V6nEjHO@Da1
+I2a`a:Bd_E]?<m7nDz_^Gh2
+Z27 VFEgEBnz[D<J1c`NXCQ=S61
+R4
+R5
+R17
+R18
+Z28 L0 307
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@p@a@r@t@e_@c_vlg_vec_tst
