@@ -1,0 +1,9 @@
+
+State Machine - |PARTE_E|fstate
+Name fstate.Guarda_Dato fstate.ACK fstate.R_W fstate.Guarda_Direccion fstate.Start fstate.Oscioso 
+fstate.Oscioso 0 0 0 0 0 0 
+fstate.Start 0 0 0 0 1 1 
+fstate.Guarda_Direccion 0 0 0 1 0 1 
+fstate.R_W 0 0 1 0 0 1 
+fstate.ACK 0 1 0 0 0 1 
+fstate.Guarda_Dato 1 0 0 0 0 1 

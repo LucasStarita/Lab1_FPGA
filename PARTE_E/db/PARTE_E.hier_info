@@ -1,0 +1,24 @@
+|PARTE_E
+clock => fstate~1.DATAIN
+reset => reg_fstate.Oscioso.OUTPUTSELECT
+reset => reg_fstate.Start.OUTPUTSELECT
+reset => reg_fstate.Guarda_Direccion.OUTPUTSELECT
+reset => reg_fstate.R_W.OUTPUTSELECT
+reset => reg_fstate.ACK.OUTPUTSELECT
+reset => reg_fstate.Guarda_Dato.OUTPUTSELECT
+reset => Hab_Dir.OUTPUTSELECT
+reset => Hab_Dat.OUTPUTSELECT
+reset => Hab_ACK.OUTPUTSELECT
+SDA => Selector0.IN1
+SDA => reg_fstate.DATAB
+fin_dir => process_1.IN0
+fin_dir => process_1.IN0
+soy => process_1.IN1
+soy => process_1.IN1
+fin_dato => Selector0.IN3
+fin_dato => Selector2.IN2
+Hab_Dir <= Hab_Dir.DB_MAX_OUTPUT_PORT_TYPE
+Hab_Dat <= Hab_Dat.DB_MAX_OUTPUT_PORT_TYPE
+Hab_ACK <= Hab_ACK.DB_MAX_OUTPUT_PORT_TYPE
+
+

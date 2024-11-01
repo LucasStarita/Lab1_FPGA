@@ -17,7 +17,7 @@ L6
 V4=IKP?^Hh[c2hHNUA1G311
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1729730902.492000
+Z10 !s108 1730488033.053000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd|
 Z12 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/D_FF.vhd|
 Z13 o-93 -work work -O0
@@ -43,7 +43,7 @@ R14
 !s100 IYV<VRK:9aQg79cX@KX251
 !i10b 1
 Erestadorcompleto
-Z15 w1729729856
+Z15 w1729797267
 R4
 R5
 R6
@@ -54,7 +54,7 @@ L4
 V:O6lkgdmgnk44V3NZe_3G0
 R9
 31
-Z18 !s108 1729730902.602000
+Z18 !s108 1730488033.131000
 Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd|
 Z20 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto.vhd|
 R13
@@ -91,7 +91,7 @@ Vk2RG^^S4[N85PM1kZYbMP0
 R9
 31
 !i10b 1
-Z24 !s108 1729730902.697000
+Z24 !s108 1730488033.210000
 Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto_tb.vhd|
 Z26 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_B/RestadorCompleto_tb.vhd|
 R13
