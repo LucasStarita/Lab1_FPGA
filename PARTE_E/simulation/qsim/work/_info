@@ -4,23 +4,23 @@ K3
 cModel Technology
 Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_E\simulation\qsim
 vPARTE_E
-Z1 IgnzAmiajeTUS<Jd9iY]K^0
-Z2 VXk9dPnd90c0n?ObS`Ab6`3
-Z3 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_E\simulation\qsim
-Z4 w1730487822
-Z5 8PARTE_E.vo
-Z6 FPARTE_E.vo
+Z1 !s100 I0bUgmM[jDlDfmh>Fb<3[1
+Z2 IgnzAmiajeTUS<Jd9iY]K^0
+Z3 VXk9dPnd90c0n?ObS`Ab6`3
+Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_E\simulation\qsim
+Z5 w1730502236
+Z6 8PARTE_E.vo
+Z7 FPARTE_E.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|PARTE_E.vo|
-Z9 o-work work -O0
-Z10 n@p@a@r@t@e_@e
+Z9 !s90 -work|work|PARTE_E.vo|
+Z10 o-work work -O0
+Z11 n@p@a@r@t@e_@e
 !i10b 1
-Z11 !s100 I0bUgmM[jDlDfmh>Fb<3[1
 !s85 0
-Z12 !s108 1730487823.322000
+Z12 !s108 1730502237.145000
 Z13 !s107 PARTE_E.vo|
 !s101 -O0
 vPARTE_E_vlg_check_tst
@@ -28,58 +28,58 @@ vPARTE_E_vlg_check_tst
 Z14 !s100 X7NC@`0n@bId]UW@<]P>X1
 Z15 IV8m>Io2jjXKT3]bid2R0l2
 Z16 V3eA30NM9P@G@IXM@AMkhV1
-R3
 R4
-Z17 8PARTE_E.vt
-Z18 FPARTE_E.vt
+Z17 w1730502235
+Z18 8PARTE_E.vt
+Z19 FPARTE_E.vt
 L0 67
-R7
+R8
 r1
 !s85 0
 31
-Z19 !s108 1730487823.385000
-Z20 !s107 PARTE_E.vt|
-Z21 !s90 -work|work|PARTE_E.vt|
+Z20 !s108 1730502237.231000
+Z21 !s107 PARTE_E.vt|
+Z22 !s90 -work|work|PARTE_E.vt|
 !s101 -O0
-R9
-Z22 n@p@a@r@t@e_@e_vlg_check_tst
+R10
+Z23 n@p@a@r@t@e_@e_vlg_check_tst
 vPARTE_E_vlg_sample_tst
 !i10b 1
-Z23 !s100 zdmZfU?ZJ8lKMXG]i`_IJ1
-Z24 I691H;<aziRVOghIa_J@5g3
-Z25 V7X>cOm]=FoNGaOfBSWgg70
-R3
+Z24 !s100 zdmZfU?ZJ8lKMXG]i`_IJ1
+Z25 I691H;<aziRVOghIa_J@5g3
+Z26 V7X>cOm]=FoNGaOfBSWgg70
 R4
 R17
 R18
+R19
 L0 29
-R7
+R8
 r1
 !s85 0
 31
-R19
 R20
 R21
+R22
 !s101 -O0
-R9
-Z26 n@p@a@r@t@e_@e_vlg_sample_tst
+R10
+Z27 n@p@a@r@t@e_@e_vlg_sample_tst
 vPARTE_E_vlg_vec_tst
 !i10b 1
-Z27 !s100 ES3hFU]^K7>eP7F0L904Y3
-Z28 IX>i0Cg[;KB9WMQ=4]i`bN0
-Z29 V>AzO1aeQ=>FMzGWLGU42@3
-R3
+Z28 !s100 ES3hFU]^K7>eP7F0L904Y3
+Z29 IX>i0Cg[;KB9WMQ=4]i`bN0
+Z30 V>AzO1aeQ=>FMzGWLGU42@3
 R4
 R17
 R18
-Z30 L0 219
-R7
+R19
+Z31 L0 219
+R8
 r1
 !s85 0
 31
-R19
 R20
 R21
+R22
 !s101 -O0
-R9
-Z31 n@p@a@r@t@e_@e_vlg_vec_tst
+R10
+Z32 n@p@a@r@t@e_@e_vlg_vec_tst

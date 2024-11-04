@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do PARTE_A_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -48,4 +49,3 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# WARNING: No extended dataflow license exists

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_A\simulation\modelsim
 Eparte_a
-Z1 w1729714838
+Z1 w1729799437
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_A\simulation\modelsim
@@ -15,7 +15,7 @@ L4
 VV_MbjoK[]l:GCPTTgTz130
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1729798337.031000
+Z8 !s108 1730585242.390000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A.vhd|
 Z10 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A.vhd|
 Z11 o-93 -work work -O0
@@ -28,7 +28,7 @@ R3
 DEx4 work 7 parte_a 0 22 V_MbjoK[]l:GCPTTgTz130
 l17
 L13
-VQAOh=`amaeGif0``8T6RN2
+VDgoHnQY^6KGjl]4=zENX71
 R7
 31
 R8
@@ -36,7 +36,7 @@ R9
 R10
 R11
 R12
-!s100 3TIXGf8ZPdD7TK6:61CMg1
+!s100 UDYRIFOcmNclN3Xj1D<mG2
 !i10b 1
 Eparte_a_testbench
 Z13 w1729717363
@@ -52,7 +52,7 @@ Vo6KCSmQ_6o2>WPefd6QV[3
 R7
 31
 !i10b 1
-Z16 !s108 1729798337.188000
+Z16 !s108 1730585245.147000
 Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd|
 Z18 !s107 C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/PARTE_A_TESTBENCH.vhd|
 R11
