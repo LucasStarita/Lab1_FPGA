@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_F\simulation\qsim
+vDivision
+Z1 !s100 1Mc2dD?lOmkdZb:QJ5ZJm0
+Z2 I_zBHm8YMBlE4j6H[=a9KV3
+Z3 V_J0QDBV<>aAlmf8M4^4S70
+Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_F\simulation\qsim
+Z5 w1730985530
+Z6 8PARTE_F.vo
+Z7 FPARTE_F.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|PARTE_F.vo|
+Z10 o-work work -O0
+Z11 n@division
+!i10b 1
+!s85 0
+Z12 !s108 1730985531.364000
+Z13 !s107 PARTE_F.vo|
+!s101 -O0
+vDivision_vlg_check_tst
+!i10b 1
+Z14 !s100 QnMldz_ZG3>[D8mdQ]5CQ2
+Z15 IYiCO0OSeO1UUmK52Qo8h62
+Z16 VIcA?Znz79Nz8CVf]a5DgY2
+R4
+Z17 w1730985529
+Z18 8PARTE_F.vt
+Z19 FPARTE_F.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1730985531.426000
+Z21 !s107 PARTE_F.vt|
+Z22 !s90 -work|work|PARTE_F.vt|
+!s101 -O0
+R10
+Z23 n@division_vlg_check_tst
+vDivision_vlg_sample_tst
+!i10b 1
+Z24 !s100 <K=Q:2l@HGfFLV5Sh<GT>0
+Z25 IW5JF[BaY>N]PIi5Kl^0lG3
+Z26 VW5F2Leoh@94I8mZK81o4Q0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@division_vlg_sample_tst
+vDivision_vlg_vec_tst
+!i10b 1
+Z28 !s100 M9HV=>[5^kFAG8mW`7zbV2
+Z29 ILiYg0H]R]bRZ@i0cFV;zM0
+Z30 VXgzZ@3W[ba2E_M6MDAc?41
+R4
+R17
+R18
+R19
+Z31 L0 315
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@division_vlg_vec_tst
+vDivisor
+Z33 IHYe>1<O:>cO8eK531bgAV1
+Z34 VmdUNaHNi0320mY@<dAEE92
+R4
+Z35 w1730942667
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z36 n@divisor
+Z37 !s100 b=;F0eG_2C86jLkdWg;@D1
+Z38 !s108 1730942668.737000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisor_vlg_check_tst
+Z39 IiCW_Rm7ii0EiR11C:9>m`0
+Z40 Vf^5_;Xe2S5XWl;lTj:m2<2
+R4
+R35
+R18
+R19
+L0 63
+R8
+r1
+31
+Z41 !s108 1730942668.848000
+Z42 !s107 PARTE_F.vt|
+R22
+R10
+Z43 n@divisor_vlg_check_tst
+Z44 !s100 6a]Kz^:kOT0dI<7om9?N^2
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisor_vlg_sample_tst
+Z45 IGz><[h`B2jCnnZ=;C_J7I3
+Z46 VM@XiYCIVT:@Vn=4QR8BeW3
+R4
+R35
+R18
+R19
+L0 29
+R8
+r1
+31
+R41
+R42
+R22
+R10
+Z47 n@divisor_vlg_sample_tst
+Z48 !s100 9ljA169[gf[^H004H^?@e0
+!i10b 1
+!s85 0
+!s101 -O0
+vDivisor_vlg_vec_tst
+Z49 I4ikVWTD89W^gT;:d=@4a`3
+Z50 V_L^o<6YIC5jWC45h4REiA1
+R4
+R35
+R18
+R19
+Z51 L0 435
+R8
+r1
+31
+R41
+R42
+R22
+R10
+Z52 n@divisor_vlg_vec_tst
+Z53 !s100 Mz;3eLV]EN46YIY=m;]5k0
+!i10b 1
+!s85 0
+!s101 -O0

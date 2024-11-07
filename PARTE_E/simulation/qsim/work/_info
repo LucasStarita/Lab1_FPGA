@@ -8,7 +8,7 @@ Z1 !s100 I0bUgmM[jDlDfmh>Fb<3[1
 Z2 IgnzAmiajeTUS<Jd9iY]K^0
 Z3 VXk9dPnd90c0n?ObS`Ab6`3
 Z4 dC:\Users\Sorteito\Desktop\Lab_FPGA\PARTE_E\simulation\qsim
-Z5 w1730502236
+Z5 w1730906739
 Z6 8PARTE_E.vo
 Z7 FPARTE_E.vo
 L0 31
@@ -20,7 +20,7 @@ Z10 o-work work -O0
 Z11 n@p@a@r@t@e_@e
 !i10b 1
 !s85 0
-Z12 !s108 1730502237.145000
+Z12 !s108 1730906740.495000
 Z13 !s107 PARTE_E.vo|
 !s101 -O0
 vPARTE_E_vlg_check_tst
@@ -29,57 +29,57 @@ Z14 !s100 X7NC@`0n@bId]UW@<]P>X1
 Z15 IV8m>Io2jjXKT3]bid2R0l2
 Z16 V3eA30NM9P@G@IXM@AMkhV1
 R4
-Z17 w1730502235
-Z18 8PARTE_E.vt
-Z19 FPARTE_E.vt
+R5
+Z17 8PARTE_E.vt
+Z18 FPARTE_E.vt
 L0 67
 R8
 r1
 !s85 0
 31
-Z20 !s108 1730502237.231000
-Z21 !s107 PARTE_E.vt|
-Z22 !s90 -work|work|PARTE_E.vt|
+Z19 !s108 1730906740.574000
+Z20 !s107 PARTE_E.vt|
+Z21 !s90 -work|work|PARTE_E.vt|
 !s101 -O0
 R10
-Z23 n@p@a@r@t@e_@e_vlg_check_tst
+Z22 n@p@a@r@t@e_@e_vlg_check_tst
 vPARTE_E_vlg_sample_tst
 !i10b 1
-Z24 !s100 zdmZfU?ZJ8lKMXG]i`_IJ1
-Z25 I691H;<aziRVOghIa_J@5g3
-Z26 V7X>cOm]=FoNGaOfBSWgg70
+Z23 !s100 zdmZfU?ZJ8lKMXG]i`_IJ1
+Z24 I691H;<aziRVOghIa_J@5g3
+Z25 V7X>cOm]=FoNGaOfBSWgg70
 R4
+R5
 R17
 R18
-R19
 L0 29
 R8
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !s101 -O0
 R10
-Z27 n@p@a@r@t@e_@e_vlg_sample_tst
+Z26 n@p@a@r@t@e_@e_vlg_sample_tst
 vPARTE_E_vlg_vec_tst
 !i10b 1
-Z28 !s100 ES3hFU]^K7>eP7F0L904Y3
-Z29 IX>i0Cg[;KB9WMQ=4]i`bN0
-Z30 V>AzO1aeQ=>FMzGWLGU42@3
+Z27 !s100 ES3hFU]^K7>eP7F0L904Y3
+Z28 IX>i0Cg[;KB9WMQ=4]i`bN0
+Z29 V>AzO1aeQ=>FMzGWLGU42@3
 R4
+R5
 R17
 R18
-R19
-Z31 L0 219
+Z30 L0 219
 R8
 r1
 !s85 0
 31
+R19
 R20
 R21
-R22
 !s101 -O0
 R10
-Z32 n@p@a@r@t@e_@e_vlg_vec_tst
+Z31 n@p@a@r@t@e_@e_vlg_vec_tst

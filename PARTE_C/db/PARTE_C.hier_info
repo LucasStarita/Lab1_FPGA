@@ -1,33 +1,5 @@
 |PARTE_C
 C0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-ASINC => inst12.ACLR
-ASINC => inst2.ACLR
-ASINC => inst2.PRESET
-ASINC => inst8.ACLR
-ASINC => inst8.PRESET
-ASINC => inst17.ACLR
-ASINC => inst17.PRESET
-ASINC => inst12.PRESET
-ASINC => inst13.ACLR
-ASINC => inst5.ACLR
-ASINC => inst5.PRESET
-ASINC => inst9.ACLR
-ASINC => inst9.PRESET
-ASINC => inst13.PRESET
-ASINC => inst14.ACLR
-ASINC => inst6.ACLR
-ASINC => inst6.PRESET
-ASINC => inst10.ACLR
-ASINC => inst10.PRESET
-ASINC => inst14.PRESET
-ASINC => inst15.ACLR
-ASINC => inst7.ACLR
-ASINC => inst7.PRESET
-ASINC => inst11.ACLR
-ASINC => inst11.PRESET
-ASINC => inst15.PRESET
-ASINC => inst16.ACLR
-ASINC => inst16.PRESET
 CLK => inst12.CLK
 CLK => inst2.CLK
 CLK => inst8.CLK
@@ -42,6 +14,7 @@ CLK => inst15.CLK
 CLK => inst7.CLK
 CLK => inst11.CLK
 CLK => inst16.CLK
+CLK => inst20.CLK
 A0 => inst2.DATAIN
 B0 => inst8.DATAIN
 Bin => inst17.DATAIN
@@ -55,7 +28,7 @@ C3 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 A3 => inst7.DATAIN
 B3 => inst11.DATAIN
 B <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-Z <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Z <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |PARTE_C|RestadorCompleto_C:inst

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/23/2024 17:27:48"
+// DATE "11/06/2024 11:46:59"
 
 // 
 // Device: Altera EP3C120F780C7 Package FBGA780
@@ -28,21 +28,21 @@
 
 `timescale 1 ps/ 1 ps
 
-module PARTE_A (
-	SW1,
+module Block1 (
+	LED,
 	SW2,
 	SW3,
-	LED);
-input 	SW1;
+	SW1);
+output 	LED;
 input 	SW2;
 input 	SW3;
-output 	LED;
+input 	SW1;
 
 // Design Ports Information
-// LED	=>  Location: PIN_AB5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// SW1	=>  Location: PIN_AB6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// SW3	=>  Location: PIN_AC4,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// SW2	=>  Location: PIN_AD4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED	=>  Location: PIN_AF19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW3	=>  Location: PIN_AG23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW2	=>  Location: PIN_AD18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW1	=>  Location: PIN_AC14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -56,20 +56,16 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-// synopsys translate_off
-initial $sdf_annotate("PARTE_A_v.sdo");
-// synopsys translate_on
-
 wire \LED~output_o ;
-wire \SW3~input_o ;
 wire \SW1~input_o ;
 wire \SW2~input_o ;
-wire \LED~0_combout ;
+wire \SW3~input_o ;
+wire \inst4~combout ;
 
 
-// Location: IOOBUF_X0_Y4_N23
+// Location: IOOBUF_X83_Y0_N16
 cycloneiii_io_obuf \LED~output (
-	.i(\LED~0_combout ),
+	.i(\inst4~combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -80,17 +76,7 @@ defparam \LED~output .bus_hold = "false";
 defparam \LED~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y4_N1
-cycloneiii_io_ibuf \SW3~input (
-	.i(SW3),
-	.ibar(gnd),
-	.o(\SW3~input_o ));
-// synopsys translate_off
-defparam \SW3~input .bus_hold = "false";
-defparam \SW3~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X0_Y4_N8
+// Location: IOIBUF_X56_Y0_N22
 cycloneiii_io_ibuf \SW1~input (
 	.i(SW1),
 	.ibar(gnd),
@@ -100,7 +86,7 @@ defparam \SW1~input .bus_hold = "false";
 defparam \SW1~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X1_Y0_N8
+// Location: IOIBUF_X85_Y0_N8
 cycloneiii_io_ibuf \SW2~input (
 	.i(SW2),
 	.ibar(gnd),
@@ -110,21 +96,31 @@ defparam \SW2~input .bus_hold = "false";
 defparam \SW2~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y4_N0
-cycloneiii_lcell_comb \LED~0 (
-// Equation(s):
-// \LED~0_combout  = (\SW1~input_o  & ((\SW3~input_o ) # (\SW2~input_o ))) # (!\SW1~input_o  & ((!\SW2~input_o )))
+// Location: IOIBUF_X81_Y0_N22
+cycloneiii_io_ibuf \SW3~input (
+	.i(SW3),
+	.ibar(gnd),
+	.o(\SW3~input_o ));
+// synopsys translate_off
+defparam \SW3~input .bus_hold = "false";
+defparam \SW3~input .simulate_z_as = "z";
+// synopsys translate_on
 
-	.dataa(\SW3~input_o ),
-	.datab(\SW1~input_o ),
-	.datac(gnd),
-	.datad(\SW2~input_o ),
+// Location: LCCOMB_X84_Y1_N24
+cycloneiii_lcell_comb inst4(
+// Equation(s):
+// \inst4~combout  = (\SW1~input_o  & (!\SW2~input_o )) # (!\SW1~input_o  & ((\SW2~input_o ) # (\SW3~input_o )))
+
+	.dataa(\SW1~input_o ),
+	.datab(\SW2~input_o ),
+	.datac(\SW3~input_o ),
+	.datad(gnd),
 	.cin(gnd),
-	.combout(\LED~0_combout ),
+	.combout(\inst4~combout ),
 	.cout());
 // synopsys translate_off
-defparam \LED~0 .lut_mask = 16'hCCBB;
-defparam \LED~0 .sum_lutc_input = "datac";
+defparam inst4.lut_mask = 16'h7676;
+defparam inst4.sum_lutc_input = "datac";
 // synopsys translate_on
 
 assign LED = \LED~output_o ;

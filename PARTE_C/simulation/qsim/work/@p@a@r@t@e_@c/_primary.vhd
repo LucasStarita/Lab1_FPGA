@@ -3,7 +3,6 @@ use verilog.vl_types.all;
 entity PARTE_C is
     port(
         C0              : out    vl_logic;
-        ASINC           : in     vl_logic;
         CLK             : in     vl_logic;
         A0              : in     vl_logic;
         B0              : in     vl_logic;

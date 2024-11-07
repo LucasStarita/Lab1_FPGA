@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/24/2024 21:20:12"
+// Generated on "11/06/2024 17:27:41"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    PARTE_C
 // 
@@ -31,7 +31,6 @@ module PARTE_C_vlg_sample_tst(
 	A1,
 	A2,
 	A3,
-	ASINC,
 	B0,
 	B1,
 	B2,
@@ -44,7 +43,6 @@ input  A0;
 input  A1;
 input  A2;
 input  A3;
-input  ASINC;
 input  B0;
 input  B1;
 input  B2;
@@ -55,7 +53,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(A0 or A1 or A2 or A3 or ASINC or B0 or B1 or B2 or B3 or Bin or CLK)
+always @(A0 or A1 or A2 or A3 or B0 or B1 or B2 or B3 or Bin or CLK)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -311,7 +309,6 @@ reg A0;
 reg A1;
 reg A2;
 reg A3;
-reg ASINC;
 reg B0;
 reg B1;
 reg B2;
@@ -335,7 +332,6 @@ PARTE_C i1 (
 	.A1(A1),
 	.A2(A2),
 	.A3(A3),
-	.ASINC(ASINC),
 	.B(B),
 	.B0(B0),
 	.B1(B1),
@@ -351,33 +347,44 @@ PARTE_C i1 (
 );
 
 // A0
-initial
+always
 begin
-	A0 = 1'b1;
+	A0 = 1'b0;
+	A0 = #20000 1'b1;
+	#20000;
 end 
 
 // A1
 initial
 begin
-	A1 = 1'b1;
+	repeat(12)
+	begin
+		A1 = 1'b0;
+		A1 = #40000 1'b1;
+		# 40000;
+	end
+	A1 = 1'b0;
 end 
 
 // A2
 initial
 begin
-	A2 = 1'b1;
+	repeat(3)
+	begin
+		A2 = 1'b0;
+		A2 = #160000 1'b1;
+		# 160000;
+	end
+	A2 = 1'b0;
 end 
 
 // A3
 initial
 begin
-	A3 = 1'b1;
-end 
-
-// ASINC
-initial
-begin
-	ASINC = 1'b1;
+	A3 = 1'b0;
+	A3 = #320000 1'b1;
+	A3 = #320000 1'b0;
+	A3 = #320000 1'b1;
 end 
 
 // B0
@@ -423,7 +430,6 @@ PARTE_C_vlg_sample_tst tb_sample (
 	.A1(A1),
 	.A2(A2),
 	.A3(A3),
-	.ASINC(ASINC),
 	.B0(B0),
 	.B1(B1),
 	.B2(B2),

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C120F780C7
-set_global_assignment -name TOP_LEVEL_ENTITY PARTE_A
+set_global_assignment -name TOP_LEVEL_ENTITY Esquematico2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:54  OCTOBER 23, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -54,11 +54,10 @@ set_location_assignment PIN_AD18 -to SW2
 set_location_assignment PIN_AG23 -to SW3
 set_location_assignment PIN_AF19 -to LED
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name SIMULATION_MODE TIMING
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/Waveform.vwf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
@@ -69,8 +68,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME PARTE_A_TESTBENCH -section_id ed
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME uut -section_id PARTE_A_TESTBENCH
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME PARTE_A_TESTBENCH -section_id PARTE_A_TESTBENCH
 set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name EDA_TEST_BENCH_FILE PARTE_A_TESTBENCH.vhd -section_id PARTE_A_TESTBENCH
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_A/Waveform.vwf"
+set_global_assignment -name BDF_FILE Esquematico2.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_FILE PARTE_A_TESTBENCH.vhd -section_id PARTE_A_TESTBENCH
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

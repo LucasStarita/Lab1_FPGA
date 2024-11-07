@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity prueba is
+
+  port ( 
+    p: out std_logic_vector(5 downto 0);
+    
+end entity;
+
+architecture Behavioral of divider is 
+
+begin 
+
+ p <= (std_logic_vector(0.25)
+  
+  end Behavioral;

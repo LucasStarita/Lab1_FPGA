@@ -1,4 +1,11 @@
-|PARTE_A
+|Esquematico2
+LED <= PARTE_A:inst.LED
+SW1 => PARTE_A:inst.SW1
+SW2 => PARTE_A:inst.SW2
+SW3 => PARTE_A:inst.SW3
+
+
+|Esquematico2|PARTE_A:inst
 SW1 => LED.IN0
 SW2 => LED.IN1
 SW2 => LED.IN0
