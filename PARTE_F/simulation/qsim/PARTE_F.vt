@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/07/2024 10:18:49"
+// Generated on "11/07/2024 15:06:37"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Division
 // 
@@ -60,16 +60,16 @@ module Division_vlg_check_tst (
 	cociente,
 	sampler_rx
 );
-input [9:0] cociente;
+input [15:0] cociente;
 input sampler_rx;
 
-reg [9:0] cociente_expected;
+reg [15:0] cociente_expected;
 
-reg [9:0] cociente_prev;
+reg [15:0] cociente_prev;
 
-reg [9:0] cociente_expected_prev;
+reg [15:0] cociente_expected_prev;
 
-reg [9:0] last_cociente_exp;
+reg [15:0] last_cociente_exp;
 
 reg trigger;
 
@@ -102,6 +102,36 @@ begin
 end
 
 
+// expected cociente[ 15 ]
+initial
+begin
+	cociente_expected[15] = 1'bX;
+end 
+// expected cociente[ 14 ]
+initial
+begin
+	cociente_expected[14] = 1'bX;
+end 
+// expected cociente[ 13 ]
+initial
+begin
+	cociente_expected[13] = 1'bX;
+end 
+// expected cociente[ 12 ]
+initial
+begin
+	cociente_expected[12] = 1'bX;
+end 
+// expected cociente[ 11 ]
+initial
+begin
+	cociente_expected[11] = 1'bX;
+end 
+// expected cociente[ 10 ]
+initial
+begin
+	cociente_expected[10] = 1'bX;
+end 
 // expected cociente[ 9 ]
 initial
 begin
@@ -296,6 +326,84 @@ begin
 		on_first_change[1] = 1'b0;
 		last_cociente_exp[9] = cociente_expected_prev[9];
 	end
+	if (
+		( cociente_expected_prev[10] !== 1'bx ) && ( cociente_prev[10] !== cociente_expected_prev[10] )
+		&& ((cociente_expected_prev[10] !== last_cociente_exp[10]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[10] = cociente_expected_prev[10];
+	end
+	if (
+		( cociente_expected_prev[11] !== 1'bx ) && ( cociente_prev[11] !== cociente_expected_prev[11] )
+		&& ((cociente_expected_prev[11] !== last_cociente_exp[11]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[11] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[11] = cociente_expected_prev[11];
+	end
+	if (
+		( cociente_expected_prev[12] !== 1'bx ) && ( cociente_prev[12] !== cociente_expected_prev[12] )
+		&& ((cociente_expected_prev[12] !== last_cociente_exp[12]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[12] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[12] = cociente_expected_prev[12];
+	end
+	if (
+		( cociente_expected_prev[13] !== 1'bx ) && ( cociente_prev[13] !== cociente_expected_prev[13] )
+		&& ((cociente_expected_prev[13] !== last_cociente_exp[13]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[13] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[13] = cociente_expected_prev[13];
+	end
+	if (
+		( cociente_expected_prev[14] !== 1'bx ) && ( cociente_prev[14] !== cociente_expected_prev[14] )
+		&& ((cociente_expected_prev[14] !== last_cociente_exp[14]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[14] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[14] = cociente_expected_prev[14];
+	end
+	if (
+		( cociente_expected_prev[15] !== 1'bx ) && ( cociente_prev[15] !== cociente_expected_prev[15] )
+		&& ((cociente_expected_prev[15] !== last_cociente_exp[15]) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port cociente[15] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", cociente_expected_prev);
+		$display ("     Real value = %b", cociente_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_cociente_exp[15] = cociente_expected_prev[15];
+	end
 
 	trigger <= ~trigger;
 end
@@ -318,7 +426,7 @@ module Division_vlg_vec_tst();
 reg [5:0] dividendo;
 reg [5:0] divisor;
 // wires                                               
-wire [9:0] cociente;
+wire [15:0] cociente;
 
 wire sampler;                             
 
@@ -332,111 +440,62 @@ Division i1 (
 // dividendo[ 5 ]
 initial
 begin
-	dividendo[5] = 1'b0;
-	dividendo[5] = #320000 1'b1;
-	dividendo[5] = #320000 1'b0;
-	dividendo[5] = #320000 1'b1;
+	dividendo[5] = 1'b1;
 end 
 // dividendo[ 4 ]
 initial
 begin
-	repeat(3)
-	begin
-		dividendo[4] = 1'b0;
-		dividendo[4] = #160000 1'b1;
-		# 160000;
-	end
-	dividendo[4] = 1'b0;
+	dividendo[4] = 1'b1;
 end 
 // dividendo[ 3 ]
 initial
 begin
-	repeat(6)
-	begin
-		dividendo[3] = 1'b0;
-		dividendo[3] = #80000 1'b1;
-		# 80000;
-	end
-	dividendo[3] = 1'b0;
+	dividendo[3] = 1'b1;
 end 
 // dividendo[ 2 ]
 initial
 begin
-	repeat(12)
-	begin
-		dividendo[2] = 1'b0;
-		dividendo[2] = #40000 1'b1;
-		# 40000;
-	end
-	dividendo[2] = 1'b0;
+	dividendo[2] = 1'b1;
 end 
 // dividendo[ 1 ]
-always
+initial
 begin
-	dividendo[1] = 1'b0;
-	dividendo[1] = #20000 1'b1;
-	#20000;
+	dividendo[1] = 1'b1;
 end 
 // dividendo[ 0 ]
-always
+initial
 begin
-	dividendo[0] = 1'b0;
-	dividendo[0] = #10000 1'b1;
-	#10000;
+	dividendo[0] = 1'b1;
 end 
 // divisor[ 5 ]
 initial
 begin
-	divisor[5] = 1'b0;
-	divisor[5] = #640000 1'b1;
+	divisor[5] = 1'b1;
 end 
 // divisor[ 4 ]
 initial
 begin
-	divisor[4] = 1'b0;
-	divisor[4] = #320000 1'b1;
-	divisor[4] = #320000 1'b0;
-	divisor[4] = #320000 1'b1;
+	divisor[4] = 1'b1;
 end 
 // divisor[ 3 ]
 initial
 begin
-	repeat(3)
-	begin
-		divisor[3] = 1'b0;
-		divisor[3] = #160000 1'b1;
-		# 160000;
-	end
-	divisor[3] = 1'b0;
+	divisor[3] = 1'b1;
 end 
 // divisor[ 2 ]
 initial
 begin
-	repeat(6)
-	begin
-		divisor[2] = 1'b0;
-		divisor[2] = #80000 1'b1;
-		# 80000;
-	end
-	divisor[2] = 1'b0;
+	divisor[2] = 1'b1;
 end 
 // divisor[ 1 ]
 initial
 begin
-	repeat(12)
-	begin
-		divisor[1] = 1'b0;
-		divisor[1] = #40000 1'b1;
-		# 40000;
-	end
-	divisor[1] = 1'b0;
+	divisor[1] = 1'b1;
 end 
 // divisor[ 0 ]
-always
+initial
 begin
-	divisor[0] = 1'b0;
-	divisor[0] = #20000 1'b1;
-	#20000;
+	divisor[0] = 1'b1;
 end 
 
 Division_vlg_sample_tst tb_sample (

@@ -1,25 +1,31 @@
 |Division
-divisor[0] => Div0.IN5
-divisor[1] => Div0.IN4
-divisor[2] => Div0.IN3
-divisor[3] => Div0.IN2
-divisor[4] => Div0.IN1
-divisor[5] => Div0.IN0
-dividendo[0] => Div0.IN11
-dividendo[1] => Div0.IN10
-dividendo[2] => Div0.IN9
-dividendo[3] => Div0.IN8
-dividendo[4] => Div0.IN7
-dividendo[5] => Div0.IN6
+divisor[0] => Div0.IN15
+divisor[1] => Div0.IN14
+divisor[2] => Div0.IN13
+divisor[3] => Div0.IN12
+divisor[4] => Div0.IN11
+divisor[5] => Div0.IN10
+dividendo[0] => Div0.IN21
+dividendo[1] => Div0.IN20
+dividendo[2] => Div0.IN19
+dividendo[3] => Div0.IN18
+dividendo[4] => Div0.IN17
+dividendo[5] => Div0.IN16
 cociente[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 cociente[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 cociente[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 cociente[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 cociente[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 cociente[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-cociente[6] <= <GND>
-cociente[7] <= <GND>
-cociente[8] <= <GND>
-cociente[9] <= <GND>
+cociente[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[14] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+cociente[15] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
 
 
