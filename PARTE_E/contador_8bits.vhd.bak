@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity contador_8bits is
+    Port ( clk     : in  STD_LOGIC;
+           rst     : in  STD_LOGIC;
+           count   : out STD_LOGIC_VECTOR(7 downto 0));
+end contador_8bits;
+
+architecture Behavioral of contador_8bits is
+    signal cnt : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+begin
+
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            cnt <= "00000000";
+        elsif rising_edge(clk) then
+            cnt <= cnt + 1;
+        end if;
+    end process;
+
+    count <= cnt;
+
+end Behavioral;

@@ -1,53 +1,152 @@
-|circuiteria
-clk => bit_counter[0].CLK
-clk => bit_counter[1].CLK
-clk => bit_counter[2].CLK
-clk => fin_dato~reg0.CLK
-clk => soy~reg0.CLK
-clk => address_shift_reg[0].CLK
-clk => address_shift_reg[1].CLK
-clk => address_shift_reg[2].CLK
-clk => address_shift_reg[3].CLK
-clk => address_shift_reg[4].CLK
-clk => address_shift_reg[5].CLK
-clk => address_shift_reg[6].CLK
-reset => bit_counter[0].ACLR
-reset => bit_counter[1].ACLR
-reset => bit_counter[2].ACLR
-reset => fin_dato~reg0.ACLR
-reset => soy~reg0.ACLR
-reset => address_shift_reg[0].ACLR
-reset => address_shift_reg[1].ACLR
-reset => address_shift_reg[2].ACLR
-reset => address_shift_reg[3].ACLR
-reset => address_shift_reg[4].ACLR
-reset => address_shift_reg[5].ACLR
-reset => address_shift_reg[6].ACLR
-SDA => address_shift_reg.DATAB
-Hab_Dir => fin_dato.OUTPUTSELECT
-Hab_Dir => bit_counter.OUTPUTSELECT
-Hab_Dir => bit_counter.OUTPUTSELECT
-Hab_Dir => bit_counter.OUTPUTSELECT
-Hab_Dir => soy.OUTPUTSELECT
-Hab_Dir => address_shift_reg[6].ENA
-Hab_Dir => address_shift_reg[5].ENA
-Hab_Dir => address_shift_reg[4].ENA
-Hab_Dir => address_shift_reg[3].ENA
-Hab_Dir => address_shift_reg[2].ENA
-Hab_Dir => address_shift_reg[1].ENA
-Hab_Dir => address_shift_reg[0].ENA
-Hab_Dat => fin_dato.OUTPUTSELECT
-Hab_Dat => bit_counter.OUTPUTSELECT
-Hab_Dat => bit_counter.OUTPUTSELECT
-Hab_Dat => bit_counter.OUTPUTSELECT
-Direccion[0] => Equal0.IN6
-Direccion[1] => Equal0.IN5
-Direccion[2] => Equal0.IN4
-Direccion[3] => Equal0.IN3
-Direccion[4] => Equal0.IN2
-Direccion[5] => Equal0.IN1
-Direccion[6] => Equal0.IN0
-soy <= soy~reg0.DB_MAX_OUTPUT_PORT_TYPE
-fin_dato <= fin_dato~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|Circuito_Final
+Dato_Guardado[0] <= registro_8bits:inst4.q[0]
+Dato_Guardado[1] <= registro_8bits:inst4.q[1]
+Dato_Guardado[2] <= registro_8bits:inst4.q[2]
+Dato_Guardado[3] <= registro_8bits:inst4.q[3]
+Dato_Guardado[4] <= registro_8bits:inst4.q[4]
+Dato_Guardado[5] <= registro_8bits:inst4.q[5]
+Dato_Guardado[6] <= registro_8bits:inst4.q[6]
+Dato_Guardado[7] <= registro_8bits:inst4.q[7]
+SCL => inst7.IN0
+SCL => PARTE_E:inst5.clock
+SCL => inst6.IN0
+SDA => PARTE_E:inst5.SDA
+SDA => registro_7bits:inst2.d
+SDA => registro_8bits:inst4.d
+MiDireccion[0] => comparador_7bits:inst9.b[0]
+MiDireccion[1] => comparador_7bits:inst9.b[1]
+MiDireccion[2] => comparador_7bits:inst9.b[2]
+MiDireccion[3] => comparador_7bits:inst9.b[3]
+MiDireccion[4] => comparador_7bits:inst9.b[4]
+MiDireccion[5] => comparador_7bits:inst9.b[5]
+MiDireccion[6] => comparador_7bits:inst9.b[6]
+DireccionDestino[0] <= registro_7bits:inst2.q[0]
+DireccionDestino[1] <= registro_7bits:inst2.q[1]
+DireccionDestino[2] <= registro_7bits:inst2.q[2]
+DireccionDestino[3] <= registro_7bits:inst2.q[3]
+DireccionDestino[4] <= registro_7bits:inst2.q[4]
+DireccionDestino[5] <= registro_7bits:inst2.q[5]
+DireccionDestino[6] <= registro_7bits:inst2.q[6]
+
+
+|Circuito_Final|registro_8bits:inst4
+clk => reg[0].CLK
+clk => reg[1].CLK
+clk => reg[2].CLK
+clk => reg[3].CLK
+clk => reg[4].CLK
+clk => reg[5].CLK
+clk => reg[6].CLK
+clk => reg[7].CLK
+rst => reg[0].ACLR
+rst => reg[1].ACLR
+rst => reg[2].ACLR
+rst => reg[3].ACLR
+rst => reg[4].ACLR
+rst => reg[5].ACLR
+rst => reg[6].ACLR
+rst => reg[7].ACLR
+d => reg[0].DATAIN
+q[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= reg[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= reg[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= reg[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito_Final|PARTE_E:inst5
+clock => fstate~1.DATAIN
+reset => reg_fstate.Oscioso.OUTPUTSELECT
+reset => reg_fstate.Start.OUTPUTSELECT
+reset => reg_fstate.Guarda_Direccion.OUTPUTSELECT
+reset => reg_fstate.R_W.OUTPUTSELECT
+reset => reg_fstate.ACK.OUTPUTSELECT
+reset => reg_fstate.Guarda_Dato.OUTPUTSELECT
+reset => Hab_Dir.OUTPUTSELECT
+reset => Hab_Dat.OUTPUTSELECT
+reset => Hab_ACK.OUTPUTSELECT
+SDA => Selector0.IN1
+SDA => reg_fstate.DATAB
+fin_dir => process_1.IN0
+fin_dir => process_1.IN0
+soy => process_1.IN1
+soy => process_1.IN1
+fin_dato => Selector0.IN3
+fin_dato => Selector2.IN2
+Hab_Dir <= Hab_Dir.DB_MAX_OUTPUT_PORT_TYPE
+Hab_Dat <= Hab_Dat.DB_MAX_OUTPUT_PORT_TYPE
+Hab_ACK <= Hab_ACK.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito_Final|contador_7:inst
+clk => fin~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+rst => fin~reg0.ACLR
+rst => cnt[0].ACLR
+rst => cnt[1].ACLR
+rst => cnt[2].ACLR
+fin <= fin~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito_Final|comparador_7bits:inst9
+a[0] => Equal0.IN6
+a[1] => Equal0.IN5
+a[2] => Equal0.IN4
+a[3] => Equal0.IN3
+a[4] => Equal0.IN2
+a[5] => Equal0.IN1
+a[6] => Equal0.IN0
+b[0] => Equal0.IN13
+b[1] => Equal0.IN12
+b[2] => Equal0.IN11
+b[3] => Equal0.IN10
+b[4] => Equal0.IN9
+b[5] => Equal0.IN8
+b[6] => Equal0.IN7
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito_Final|registro_7bits:inst2
+clk => reg[0].CLK
+clk => reg[1].CLK
+clk => reg[2].CLK
+clk => reg[3].CLK
+clk => reg[4].CLK
+clk => reg[5].CLK
+clk => reg[6].CLK
+rst => reg[0].ACLR
+rst => reg[1].ACLR
+rst => reg[2].ACLR
+rst => reg[3].ACLR
+rst => reg[4].ACLR
+rst => reg[5].ACLR
+rst => reg[6].ACLR
+d => reg[0].DATAIN
+q[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= reg[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= reg[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= reg[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuito_Final|contador_8bits:inst3
+clk => fin~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+rst => fin~reg0.ACLR
+rst => cnt[0].ACLR
+rst => cnt[1].ACLR
+rst => cnt[2].ACLR
+rst => cnt[3].ACLR
+fin <= fin~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 
-State Machine - |PARTE_E|fstate
+State Machine - |Circuito_Final|PARTE_E:inst5|fstate
 Name fstate.Guarda_Dato fstate.ACK fstate.R_W fstate.Guarda_Direccion fstate.Start fstate.Oscioso 
 fstate.Oscioso 0 0 0 0 0 0 
 fstate.Start 0 0 0 0 1 1 

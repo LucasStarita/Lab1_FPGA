@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PARTE_E
-Thu Nov 07 11:21:50 2024
+Thu Nov 07 23:39:38 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Circuito_Final|PARTE_E:inst5|fstate
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +42,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 07 11:21:50 2024               ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 07 23:39:38 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; PARTE_E                                         ;
-; Top-level Entity Name              ; circuiteria                                     ;
+; Top-level Entity Name              ; Circuito_Final                                  ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 39                                              ;
+;     Total combinational functions  ; 23                                              ;
+;     Dedicated logic registers      ; 30                                              ;
+; Total registers                    ; 30                                              ;
+; Total pins                         ; 24                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -59,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C120F780C7      ;                    ;
-; Top-level entity name                                                      ; circuiteria        ; PARTE_E            ;
+; Top-level entity name                                                      ; Circuito_Final     ; PARTE_E            ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,29 +157,153 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; PARTE_E.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/PARTE_E.vhd          ;         ;
+; registro_7bits.vhd               ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/registro_7bits.vhd   ;         ;
+; registro_8bits.vhd               ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/registro_8bits.vhd   ;         ;
+; contador_8bits.vhd               ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/contador_8bits.vhd   ;         ;
+; Circuito_Final.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/Circuito_Final.bdf   ;         ;
+; contador_7.vhd                   ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/contador_7.vhd       ;         ;
+; comparador_7bits.vhd             ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/comparador_7bits.vhd ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 39    ;
+;                                             ;       ;
+; Total combinational functions               ; 23    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 11    ;
+;     -- 3 input functions                    ; 5     ;
+;     -- <=2 input functions                  ; 7     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 23    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 30    ;
+;     -- Dedicated logic registers            ; 30    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 24    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; inst7 ;
+; Maximum fan-out                             ; 13    ;
+; Total fan-out                               ; 171   ;
+; Average fan-out                             ; 1.69  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; |Circuito_Final             ; 23 (2)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |Circuito_Final                        ; work         ;
+;    |PARTE_E:inst5|          ; 7 (7)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|PARTE_E:inst5          ; work         ;
+;    |comparador_7bits:inst9| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|comparador_7bits:inst9 ; work         ;
+;    |contador_7:inst|        ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|contador_7:inst        ; work         ;
+;    |contador_8bits:inst3|   ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|contador_8bits:inst3   ; work         ;
+;    |registro_7bits:inst2|   ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|registro_7bits:inst2   ; work         ;
+;    |registro_8bits:inst4|   ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Circuito_Final|registro_8bits:inst4   ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Circuito_Final|PARTE_E:inst5|fstate                                                                             ;
++-------------------------+--------------------+------------+------------+-------------------------+--------------+----------------+
+; Name                    ; fstate.Guarda_Dato ; fstate.ACK ; fstate.R_W ; fstate.Guarda_Direccion ; fstate.Start ; fstate.Oscioso ;
++-------------------------+--------------------+------------+------------+-------------------------+--------------+----------------+
+; fstate.Oscioso          ; 0                  ; 0          ; 0          ; 0                       ; 0            ; 0              ;
+; fstate.Start            ; 0                  ; 0          ; 0          ; 0                       ; 1            ; 1              ;
+; fstate.Guarda_Direccion ; 0                  ; 0          ; 0          ; 1                       ; 0            ; 1              ;
+; fstate.R_W              ; 0                  ; 0          ; 1          ; 0                       ; 0            ; 1              ;
+; fstate.ACK              ; 0                  ; 1          ; 0          ; 0                       ; 0            ; 1              ;
+; fstate.Guarda_Dato      ; 1                  ; 0          ; 0          ; 0                       ; 0            ; 1              ;
++-------------------------+--------------------+------------+------------+-------------------------+--------------+----------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 07 11:21:49 2024
+    Info: Processing started: Thu Nov 07 23:39:35 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PARTE_E -c PARTE_E
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file parte_e.vhd
     Info (12022): Found design unit 1: PARTE_E-BEHAVIOR
     Info (12023): Found entity 1: PARTE_E
-Info (12021): Found 2 design units, including 1 entities, in source file circuiteria.vhd
-    Info (12022): Found design unit 1: circuiteria-Behavioral
-    Info (12023): Found entity 1: circuiteria
-Info (12021): Found 2 design units, including 1 entities, in source file dato.vhd
-    Info (12022): Found design unit 1: dato-Behavioral
-    Info (12023): Found entity 1: dato
-Error (10476): VHDL error at dato.vhd(24): type of identifier "SCL" does not agree with its usage as "std_logic_vector" type File: C:/Users/Sorteito/Desktop/Lab_FPGA/PARTE_E/dato.vhd Line: 24
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4618 megabytes
-    Error: Processing ended: Thu Nov 07 11:21:50 2024
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:00
+Info (12021): Found 2 design units, including 1 entities, in source file registro_7bits.vhd
+    Info (12022): Found design unit 1: registro_7bits-Behavioral
+    Info (12023): Found entity 1: registro_7bits
+Info (12021): Found 2 design units, including 1 entities, in source file registro_8bits.vhd
+    Info (12022): Found design unit 1: registro_8bits-Behavioral
+    Info (12023): Found entity 1: registro_8bits
+Info (12021): Found 2 design units, including 1 entities, in source file contador_8bits.vhd
+    Info (12022): Found design unit 1: contador_8bits-Behavioral
+    Info (12023): Found entity 1: contador_8bits
+Info (12021): Found 1 design units, including 1 entities, in source file circuito_final.bdf
+    Info (12023): Found entity 1: Circuito_Final
+Info (12021): Found 2 design units, including 1 entities, in source file contador_7.vhd
+    Info (12022): Found design unit 1: contador_7-Behavioral
+    Info (12023): Found entity 1: contador_7
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_7bits.vhd
+    Info (12022): Found design unit 1: comparador_7bits-Behavioral
+    Info (12023): Found entity 1: comparador_7bits
+Info (12127): Elaborating entity "Circuito_Final" for the top level hierarchy
+Info (12128): Elaborating entity "registro_8bits" for hierarchy "registro_8bits:inst4"
+Info (12128): Elaborating entity "PARTE_E" for hierarchy "PARTE_E:inst5"
+Info (12128): Elaborating entity "contador_7" for hierarchy "contador_7:inst"
+Info (12128): Elaborating entity "comparador_7bits" for hierarchy "comparador_7bits:inst9"
+Info (12128): Elaborating entity "registro_7bits" for hierarchy "registro_7bits:inst2"
+Info (12128): Elaborating entity "contador_8bits" for hierarchy "contador_8bits:inst3"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 39 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Thu Nov 07 23:39:38 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 
