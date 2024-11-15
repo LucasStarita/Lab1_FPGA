@@ -10,17 +10,17 @@ entity contador_7 is
 end contador_7;
 
 architecture Behavioral of contador_7 is
-    signal cnt : STD_LOGIC_VECTOR(11 downto 0) := "000000000000";
+    signal cnt : STD_LOGIC_VECTOR(2 downto 0) := "000";
 begin
 
     process(clk, rst)
     begin
         if rst = '1' then
-            cnt <= "000000000000";
+            cnt <= "000";
             fin <= '0';  
         elsif rising_edge(clk) then
-            if cnt = "110000000000" then
-                cnt <= "000000000000"; 
+            if cnt = "111" then
+                cnt <= "000"; 
                 fin <= '1';    
             else 
                 cnt <= cnt + 1;  
